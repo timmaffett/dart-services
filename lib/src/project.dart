@@ -58,18 +58,18 @@ class ProjectTemplates {
 /// are bugs. See https://github.com/dart-lang/dart-pad/issues/2033 and
 /// https://github.com/FirebaseExtended/flutterfire/issues/3962.
 const Set<String> registerableFirebasePackages = {
+  'cloud_firestore',
   'cloud_functions',
   'firebase',
   'firebase_auth',
   'firebase_core',
+  'firebase_database',
   'firebase_storage',
 };
 
 /// The set of Firebase packages which indicate that Firebase is being used.
 const Set<String> firebasePackages = {
-  'cloud_firestore',
   'firebase_analytics',
-  'firebase_database',
   'firebase_messaging',
   ...registerableFirebasePackages,
 };
