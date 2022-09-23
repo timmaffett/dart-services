@@ -95,7 +95,17 @@ Set<String> supportedFlutterPackages({required bool devMode}) => {
       'flame_splash_screen',
       'flame_tiled',
       'go_router',
-      'rxdart',
+      'basics',
+      'flutter_processing',
+      'quiver',
+      'yaml',
+      'yaml_edit',
+      'tuple',
+      'animations',
+      'equatable',
+      'matcher',
+      'flutter_map',
+      'petitparser',
       if (devMode) ...[],
     };
 
@@ -120,6 +130,7 @@ const Set<String> supportedBasicDartPackages = {
   'meta',
   'path',
   'riverpod',
+  'rxdart',
   'vector_math',
 };
 
