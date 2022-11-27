@@ -158,7 +158,8 @@ Enviroment K_GITHUB_OAUTH_RETURN_TO_APP_URL=$returnToAppUrl'
       missingParameters = true;
     }
     if (_clientSecret.isEmpty) {
-      _logger.severe('GitHub OAuth Handler: No client secret passed to init().');
+      _logger
+          .severe('GitHub OAuth Handler: No client secret passed to init().');
       missingParameters = true;
     }
     if (_authReturnUrl.isEmpty) {
@@ -167,8 +168,8 @@ Enviroment K_GITHUB_OAUTH_RETURN_TO_APP_URL=$returnToAppUrl'
       missingParameters = true;
     }
     if (_returnToAppUrl.isEmpty) {
-      _logger
-          .severe('GitHub OAuth Handler: No `return to app` url passed to init().');
+      _logger.severe(
+          'GitHub OAuth Handler: No `return to app` url passed to init().');
       missingParameters = true;
     }
     if (missingParameters) {
