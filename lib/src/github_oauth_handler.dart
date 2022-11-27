@@ -154,21 +154,21 @@ Enviroment K_GITHUB_OAUTH_RETURN_TO_APP_URL=$returnToAppUrl'
 
     bool missingParameters = false;
     if (_clientId.isEmpty) {
-      _logger.severe('GitHubOAuthHandler no client id passed to init().');
+      _logger.severe('GitHub OAuth Handler: No client id passed to init().');
       missingParameters = true;
     }
     if (_clientSecret.isEmpty) {
-      _logger.severe('GitHubOAuthHandler no client secret passed to init().');
+      _logger.severe('GitHub OAuth Handler: No client secret passed to init().');
       missingParameters = true;
     }
     if (_authReturnUrl.isEmpty) {
       _logger.severe(
-          'GitHubOAuthHandler no authorization return url passed to init().');
+          'GitHub OAuth Handler: No authorization return url passed to init().');
       missingParameters = true;
     }
     if (_returnToAppUrl.isEmpty) {
       _logger
-          .severe('GitHubOAuthHandler no return ti app url passed to init().');
+          .severe('GitHub OAuth Handler: No `return to app` url passed to init().');
       missingParameters = true;
     }
     if (missingParameters) {
